@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+}
+
+.logo img {
+    max-width: 400px;
+    margin-bottom: -50px;
+    height: auto;
+    animation: fadeScale 3s infinite;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+    color: #BB9614;
+}
+
+.message {
+    font-size: 1.2em;
+    margin: 0 20px;
+    color: #c0c0c0;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #a0a0a0;
+}
+
+@keyframes fadeScale {
+    0% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+}
